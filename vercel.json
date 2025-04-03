@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/*.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/api/guests", "dest": "/api/guests.js" },
+    { "src": "/api/guests/:id", "dest": "/api/attStatus.js" }
+  ]
+}
