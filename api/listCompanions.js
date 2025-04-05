@@ -13,7 +13,7 @@ export default async function handler(req, res){
 
   const { id_guest } = req.query;
 
-  console.log(id_guest)
+  console.log(req.query)
 
   const { data, error } = await db
     .from("companion")
