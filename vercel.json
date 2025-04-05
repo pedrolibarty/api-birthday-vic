@@ -2,7 +2,8 @@
   "version": 2,
   "builds": [{ "src": "api/*.js", "use": "@vercel/node" }],
   "routes": [
-    { "src": "/api/guests", "dest": "/api/guests.js" },
-    { "src": "/api/guests/:id", "dest": "/api/attStatus.js" }
+    { "src": "/api/guests", "dest": "/api/listGuests.js" },
+    { "src": "/api/companions", "dest": "/api/listCompanions.js" },
+    { "src": "/api/companions/:id_guest", "dest": "/api/updateCompanions.js" }
   ]
 }
