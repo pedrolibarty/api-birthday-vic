@@ -4,6 +4,6 @@
   "routes": [
   { "src": "/api/guests", "dest": "/api/listGuests.js" },
   { "src": "/api/update-companions", "dest": "/api/updateCompanions.js" },
-  { "src": "/api/companions/(?<id_guest>[^/]+)", "dest": "/api/listCompanions.js" }
+  { "src": "/api/companions/guest", "dest": "/api/listCompanions.js" }
 ]
 }
