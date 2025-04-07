@@ -64,4 +64,5 @@ app.put("/api/companions", async (req, res) => {
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log("Servidor rodando!");
+  
 });
