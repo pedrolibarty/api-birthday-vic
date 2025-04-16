@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Método não permitido" });
   }
 
-  const { data, error } = await db.from("guests").select("*");
+  const { data, error } = await db.from("companion").select("*");
 
   if (error) return res.status(500).json({ error: error.message });
 
